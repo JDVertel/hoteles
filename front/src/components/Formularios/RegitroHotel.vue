@@ -12,26 +12,13 @@
             <div class="card-header py-3">
               <p class="text-primary m-0 fw-bold">
                 <span style="color:  #b7642d"
-                  >Rellene los campos obligatorios *</span
+                  >Diligencie los siguientes datos para realizar el registro correctamente</span
                 >
               </p>
             </div>
             <div class="card-body">
               <div class="row">
-                <div class="col-sm-12 col-md-8 col-lg-4">
-                  <div class="mb-3">
-                    <label class="form-label" for="direccion_hotel"
-                      ><strong>Dirección *</strong></label
-                    ><input
-                      class="form-control"
-                      type="text"
-                      id="id_name_service"
-                      placeholder="Ej: Calle 6A #3-20 Barrio Rojo"
-                      name="direccion_hotel"
-                      required=""
-                    />
-                  </div>
-                </div>
+              
                 <div class="col-sm-12 col-md-4 col-lg-4">
                   <div class="mb-3">
                     <label class="form-label" for="nombre_hotel"
@@ -46,20 +33,21 @@
                     />
                   </div>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="col-sm-12 col-md-8 col-lg-4">
                   <div class="mb-3">
-                    <label class="form-label" for="representante_legal"
-                      ><strong>Representante&nbsp;legal *</strong></label
+                    <label class="form-label" for="direccion_hotel"
+                      ><strong>Dirección *</strong></label
                     ><input
                       class="form-control"
                       type="text"
-                      id="id_price_service-1"
-                      placeholder="Nombre del representante"
-                      name="representante_legal"
+                      id="id_name_service"
+                      placeholder="Ej: Calle 6A #3-20 Barrio Rojo"
+                      name="direccion_hotel"
                       required=""
                     />
                   </div>
                 </div>
+            
                 <div class="col-sm-12 col-md-4 col-lg-4">
                   <div class="mb-3">
                     <label class="form-label" for="tel_contacto"
@@ -91,10 +79,113 @@
                     />
                   </div>
                 </div>
-
-                <div class="col-15">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                   <div class="mb-3">
-                    <strong>Imagen principal *</strong>
+                    <label class="form-label" for="email"
+                      ><strong>Coordenadas</strong></label
+                    ><input
+                      class="form-control"
+                      type="email"
+                      id="id_price_service-3"
+                      placeholder="tomar via gps"
+                      name="email"
+                      required=""
+                    />
+                  </div>
+                </div>
+                <hr>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="mb-3">
+                    <label class="form-label" for="nombre_hotel"
+                      ><strong>NIT</strong></label
+                    ><input
+                      class="form-control"
+                      type="text"
+                      id="id_price_service"
+                      placeholder="Numero de Identificacion Tributaria"
+                      name="nombre_hotel"
+                      required=""
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="mb-3">
+                    <label class="form-label" for="nombre_hotel"
+                      ><strong>RUT</strong></label
+                    ><input
+                      class="form-control"
+                      type="text"
+                      id="id_price_service"
+                      placeholder="Registro Unico Tributario"
+                      name="nombre_hotel"
+                      required=""
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="mb-3">
+                    <label class="form-label" for="nombre_hotel"
+                      ><strong>RNT</strong></label
+                    ><input
+                      class="form-control"
+                      type="text"
+                      id="id_price_service"
+                      placeholder="Registro Nacional de Turismo"
+                      name="nombre_hotel"
+                      required=""
+                    />
+                  </div>
+                </div>
+                <hr>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="mb-3">
+                    <label class="form-label" for="representante_legal"
+                      ><strong>Representante&nbsp;legal *</strong></label
+                    ><input
+                      class="form-control"
+                      type="text"
+                      id="id_price_service-1"
+                      placeholder="Nombre del representante"
+                      name="representante_legal"
+                      required=""
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="mb-3">
+                    <label class="form-label" for="email"
+                      ><strong>Correo *</strong></label
+                    ><input
+                      class="form-control"
+                      type="email"
+                      id="id_price_service-3"
+                      placeholder="Correo valido"
+                      name="email"
+                      required=""
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="mb-3">
+                    <label class="form-label" for="tel_contacto"
+                      ><strong>Teléfono&nbsp;*</strong></label
+                    ><input
+                      class="form-control"
+                      type="text"
+                      id="id_price_service-2"
+                      placeholder="Teléfono de contacto"
+                      name="tel_contacto"
+                      oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                      pattern="[0-9]{10,}"
+                      title="Ingresa al menos 10 números"
+                      required=""
+                    />
+                  </div>
+                </div>
+                <hr>
+                <div class="col-6">
+                  <div class="mb-3">
+                    <strong>Logo *</strong>
                     <p>
                       {{ imagesSelected }} imágenes seleccionadas (Máximo 1)
                     </p>
@@ -148,7 +239,62 @@
                     </button>
                   </div>
                 </div>
-
+                <div class="col-6">
+                  <div class="mb-3">
+                    <strong>Imagen principal*</strong>
+                    <p>
+                      {{ imagesSelected }} imágenes seleccionadas (Máximo 1)
+                    </p>
+                    <div style="margin-top: -15px" class="logo">
+                      <p class="logop">
+                        <i
+                          style="color:  #b7642d; font-size: 30px"
+                          class="bi bi-file-earmark-arrow-up-fill"
+                        ></i>
+                      </p>
+                      <br />
+                      <input
+                        class="foto"
+                        style="margin-top: 13px"
+                        :required="imagesSelected !== 1"
+                        type="file"
+                        ref="fileInput"
+                        accept="image/*"
+                        multiple
+                        @change="handleFileUpload"
+                      />
+                    </div>
+                    <!-- Contenedor de las imágenes con margen -->
+                    <div
+                      style="margin-top: 15px; display: flex"
+                      class="d-flex flex-wrap gap-1"
+                    >
+                      <div
+                        v-for="(image, index) in uploadedImages"
+                        :key="index"
+                        class="image-preview"
+                      >
+                        <img
+                          class="fixed-size-image"
+                          :src="image.src"
+                          :alt="image.alt"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      style="
+                        background-color:  #b7642d;
+                        color: #fff;
+                        margin-top: 20px;
+                      "
+                      class="btn btn-custom btn"
+                      @click="clearImages"
+                      v-if="uploadedImages.length > 0"
+                    >
+                      <i class="bi bi-trash3-fill"></i> Limpiar Imágenes
+                    </button>
+                  </div>
+                </div>
 
               </div>
             </div>

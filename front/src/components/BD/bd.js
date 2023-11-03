@@ -2,7 +2,7 @@
 
 export const hoteles = [
     {
-        id:1,
+        id: 1,
         nombre: "bellavista",
         direccion: "",
         replegal: "",
@@ -14,7 +14,7 @@ export const hoteles = [
 
     },
     {
-        id:2,
+        id: 2,
         nombre: "Tamacana",
         direccion: "",
         replegal: "",
@@ -26,7 +26,7 @@ export const hoteles = [
 
     },
     {
-        id:3,
+        id: 3,
         nombre: "Vida Sana",
         direccion: "",
         replegal: "",
@@ -36,51 +36,118 @@ export const hoteles = [
 
     },
     {
-        id:4,
+        id: 4,
         nombre: "Luis Alfonso flores",
         direccion: "",
         replegal: "",
         telefono: "",
         correo: "",
         img1: "https://i.ibb.co/2Fd2rW3/5.jpg",
-    
+
     },
 
 ];
 
+/* ------------------------------------------------------------------ */
+export const Sturisticos = [
+    {
+        nombre: "salto del mico seguro",
+        descripcion: "lkasjdlkasdlkasjdlkajsdlkjasdlksa",
+        img1: "https://i.ibb.co/R77C9hC/1.jpg",
+    },
+    {
+        nombre: "Catedral",
+        descripcion: "lkasjdlkasdlkasjdlkajsdlkjasdlksa",
+        img1: "https://i.ibb.co/WkgZkZJ/3.jpg",
+    }
+    ,
+    {
+        nombre: "Juan Curí",
+        descripcion: "lkasjdlkasdlkasjdlkajsdlkjasdlksa",
+        img1: "https://i.ibb.co/xD9pTrH/4.jpg",
+    }
+    ,
+    {
+        nombre: "Piscinas",
+        descripcion: "lkasjdlkasdlkasjdlkajsdlkjasdlksa",
+        img1: "https://i.ibb.co/nBwMT4W/5.jpg",
+    }
+
+
+
+]
+/* ------------------------------------------------------------------ */
 export const habitaciones = [
 
     {
-        idhotel:1,
+        idhotel: 1,
+        personas: 2,
+        precio: "50.000",
+        img1: "",
+    },
+    {
+        idhotel: 1,
+        personas: 2,
+        precio: "50.000",
+        img1: "",
+    },
+    {
+        idhotel: 1,
+        personas: 2,
+        precio: "50.000",
+        img1: "",
+    },
+    {
+        idhotel: 1,
+        personas: 2,
+        precio: "50.000",
+        img1: "",
+    },
+    {
+        idhotel: 1,
+        personas: 2,
+        precio: "50.000",
+        img1: "",
+    },
+    {
+        idhotel: 1,
+        personas: 2,
+        precio: "50.000",
+        img1: "",
+    },
+    {
+        idhotel: 1,
+        personas: 2,
+        precio: "50.000",
+        img1: "",
+    },
+    {
+        idhotel: 1,
+        personas: 2,
+        precio: "50.000",
+        img1: "",
+    },
+    {
+        idhotel: 1,
+        personas: 2,
+        precio: "50.000",
+        img1: "",
+    },
+    {
+        idhotel: 1,
         personas: 2,
         precio: "50.000",
         img1: "",
     }
 ];
-
+/* ------------------------------------------------------------------ */
 export const detallehab = [
     {
         IDhabitacion: "",
-                img1: "",
-                img2: "",
-                img3: "",
-                img4: "",
-   
+        img1: "",
+        img2: "",
+        img3: "",
+        img4: "",
+
     }
-]
-
-export const Sturisticos=[
-{
-    nombre:"salto del mico seguro",
-    descripcion: "lkasjdlkasdlkasjdlkajsdlkjasdlksa",
-    img1:"https://i.ibb.co/R77C9hC/1.jpg",
-},
-{
-    nombre:"Catedral",
-    descripcion: "lkasjdlkasdlkasjdlkajsdlkjasdlksa",
-    img1:"https://i.ibb.co/xD9pTrH/4.jpg",
-}
-
-
-
 ]

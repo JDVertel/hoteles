@@ -101,17 +101,17 @@
         <button type="button" class="btn btn-custom btn-sm scroll-button" @click="scrollImages(100, 'hotel')">
             <i style="color: black" class="bi bi-arrow-right-circle-fill"></i>
         </button>
-
+<!-----------------------------------------------PASARELA HOTELES-----------------------------------  -->
         <div class="lista-imagenes hotel-images">
             <div class="imagen-con-texto" v-for="hotel in datahotel" bind:key="hotel.nombre.">
-                <router-link class="link" to="/BellaVista">
+                <router-link class="link" to="/GaleriaHabitaciones">
                     <img :src="`${hotel.img1}`"  alt="imagen-principal" />
                     <p class="text-hotel">{{hotel.nombre}}</p>
                 </router-link>
             </div>
  
         </div>
-
+<!--  -->
         <br />
 
         <div class="Sitios">
@@ -125,7 +125,7 @@
         <button type="button" class="btn btn-custom btn-sm scroll-button" @click="scrollImages(100, 'sitios')">
             <i style="color: black" class="bi bi-arrow-right-circle-fill"></i>
         </button>
-
+<!-----------------------------------------------PASARELA SITIOS TURISTICOS-----------------------------------  -->
         <div class="lista-imagenes sitios-images">
             <div class="imagen-con-texto" v-for="sitio in datasitios" bind:key="sitio.nombre">
                 <router-link class="link" to="/SaltoDelMico">
@@ -136,25 +136,7 @@
                 </router-link>
             </div>
 
-           <!--  <div class="imagen-con-texto">
-                <img src="https://i.ibb.co/GxS2JWX/2.jpg" alt="imagen-principal" />
-                <p class="text-hotel">Catedral</p>
-            </div>
-
-            <div class="imagen-con-texto">
-                <img src="https://i.ibb.co/WkgZkZJ/3.jpg" alt="imagen-principal" />
-                <p class="text-hotel">Museo</p>
-            </div>
-
-            <div class="imagen-con-texto">
-                <img src="https://i.ibb.co/xD9pTrH/4.jpg" alt="imagen-principal" />
-                <p class="text-hotel">Juan Curí</p>
-            </div>
-
-            <div class="imagen-con-texto">
-                <img src="https://i.ibb.co/nBwMT4W/5.jpg" alt="imagen-principal" />
-                <p class="text-hotel">Pscinas</p>
-            </div> -->
+        
         </div>
     </div>
 
@@ -163,7 +145,7 @@
 
 <script>
 
-console.log(hoteles)
+
 import {hoteles, Sturisticos} from './../components/BD/bd'
 export default {
     data: () => ({

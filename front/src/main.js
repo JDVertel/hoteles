@@ -19,11 +19,13 @@ import Registro from "../src/components/Registro.vue";
 // Pagina principal o home
 import Home from "../src/components/Home.vue";
 
-// Galeria de habitaciones de BellaVista
-import BellaVista from "../src/components//Hoteles/BellaVista.vue";
+// Detalle habitaciones 
+import galeria_habitaciones from "../src/components/Habitaciones_galeria/index.vue";
 
-// Info habitaciones BellaVista
-import BellaVistaH1 from "../src/components/Habitaciones/BellaVistaH1.vue";
+// Galeria de habitaciones 
+import detalle_habitaciones from "../src/components/Habitaciones_detalle/index.vue";
+
+
 
 // Info Info sitios turisticos
 import SaltoDelMico from "../src/components/InfoSTuristicos/SaltoDelMico.vue";
@@ -62,10 +64,11 @@ import DPanelReservas from "../src/components/Dueno/DuenoReservas/DPanelReservas
 // Definir rutas
 const routes = [
   {
-    path: "/", component: Home },
-  { path: "/BellaVista", component: BellaVista },
+    path: "/", component: Home
+  },
+  { path: "/GaleriaHabitaciones", component: galeria_habitaciones },
 
-  { path: "/BellaVistaH1", component: BellaVistaH1 },
+  { path: "/detallehabitaciones", component: detalle_habitaciones },
 
   { path: "/SaltoDelMico", component: SaltoDelMico },
 
@@ -87,30 +90,30 @@ const routes = [
   { path: "/RegistroProveedores", component: RegistroProveedores },
 
 
-// Paneles Admin
-  { path: "/PanelAdmin", component: PanelAdmin},
+  // Paneles Admin
+  { path: "/PanelAdmin", component: PanelAdmin },
 
 
-  { path: "/PanelHoteles", component: PanelHoteles},
+  { path: "/PanelHoteles", component: PanelHoteles },
 
-  { path: "/PanelProveedores", component: PanelProveedores},
+  { path: "/PanelProveedores", component: PanelProveedores },
 
-  { path: "/PanelSitios", component: PanelSitios},
+  { path: "/PanelSitios", component: PanelSitios },
 
-  { path: "/PanelHabitaciones", component: PanelHabitaciones},
+  { path: "/PanelHabitaciones", component: PanelHabitaciones },
 
-  { path: "/PanelUsuarios", component: PanelUsuarios},
-
-
-// Paneles Dueño
-  { path: "/PanelDueno", component: PanelDueno},
+  { path: "/PanelUsuarios", component: PanelUsuarios },
 
 
-  { path: "/DPanelHotel", component: DPanelHotel},
+  // Paneles Dueño
+  { path: "/PanelDueno", component: PanelDueno },
 
-  { path: "/DPanelHabitaciones", component: DPanelHabitaciones},
 
-  { path: "/DPanelReservas", component: DPanelReservas},
+  { path: "/DPanelHotel", component: DPanelHotel },
+
+  { path: "/DPanelHabitaciones", component: DPanelHabitaciones },
+
+  { path: "/DPanelReservas", component: DPanelReservas },
 
 
 ];

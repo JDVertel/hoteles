@@ -28,6 +28,7 @@
   </div>
 
   <!-- Contenedor de habitaciones -->
+  <h1>GALERIA DE HABITACIONES DISPONIBLES</h1>
   <div class="contenedor-imagenes">
     <!-- Img 1 -->
     <div class="imagen">
@@ -74,7 +75,7 @@
           50.000
         </h3>
 
-        <router-link class="link" to="/BellaVistaH1">
+        <router-link class="link" to="/detallehabitaciones">
           <button type="button" class="btn btn-light round-btn">
             <i class="material-icons">add</i>
           </button>
@@ -82,7 +83,7 @@
       </div>
     </div>
 
-    <!-- Img 2 -->
+<!--    
     <div class="imagen">
       <img src="https://i.ibb.co/pJ6qLXF/2.jpg" alt="" />
       <div class="overlay">
@@ -122,19 +123,14 @@
           >
           50.000
         </h3>
-        <!-- <h4 style="display: inline-flex; align-items: center">
-              <i class="material-icons" style="margin-right: 5px">attach_money</i>
-              50.000
-            </h4> -->
-
-        <!-- <button type="button" class="btn btn-primary btn-sm" style="border-radius: 50px;">+</button> -->
+ 
         <button type="button" class="btn btn-light round-btn">
           <i class="material-icons">add</i>
         </button>
       </div>
     </div>
 
-    <!-- Img 3 -->
+   
     <div class="imagen">
       <img src="https://i.ibb.co/Wc2V1GJ/3.jpg" alt="" />
       <div class="overlay">
@@ -174,19 +170,13 @@
           >
           50.000
         </h3>
-        <!-- <h4 style="display: inline-flex; align-items: center">
-              <i class="material-icons" style="margin-right: 5px">attach_money</i>
-              50.000
-            </h4> -->
-
-        <!-- <button type="button" class="btn btn-primary btn-sm" style="border-radius: 50px;">+</button> -->
+  
         <button type="button" class="btn btn-light round-btn">
           <i class="material-icons">add</i>
         </button>
       </div>
     </div>
 
-    <!-- Img 4 -->
     <div class="imagen">
       <img src="https://i.ibb.co/G2ys4Pv/4.jpg" alt="" />
       <div class="overlay">
@@ -226,19 +216,14 @@
           >
           50.000
         </h3>
-        <!-- <h4 style="display: inline-flex; align-items: center">
-              <i class="material-icons" style="margin-right: 5px">attach_money</i>
-              50.000
-            </h4> -->
-
-        <!-- <button type="button" class="btn btn-primary btn-sm" style="border-radius: 50px;">+</button> -->
+  
         <button type="button" class="btn btn-light round-btn">
           <i class="material-icons">add</i>
         </button>
       </div>
     </div>
 
-    <!-- Img 5 -->
+ 
     <div class="imagen">
       <img src="https://i.ibb.co/8MHTFPf/5.jpg" alt="" />
       <div class="overlay">
@@ -281,19 +266,14 @@
           >
           50.000
         </h3>
-        <!-- <h4 style="display: inline-flex; align-items: center">
-              <i class="material-icons" style="margin-right: 5px">attach_money</i>
-              50.000
-            </h4> -->
-
-        <!-- <button type="button" class="btn btn-primary btn-sm" style="border-radius: 50px;">+</button> -->
+      
         <button type="button" class="btn btn-light round-btn">
           <i class="material-icons">add</i>
         </button>
       </div>
     </div>
 
-    <!-- Img 6 -->
+
     <div class="imagen">
       <img src="https://i.ibb.co/L6pYQGp/6.jpg" alt="" />
       <div class="overlay">
@@ -337,19 +317,14 @@
           >
           50.000
         </h3>
-        <!-- <h4 style="display: inline-flex; align-items: center">
-              <i class="material-icons" style="margin-right: 5px">attach_money</i>
-              50.000
-            </h4> -->
 
-        <!-- <button type="button" class="btn btn-primary btn-sm" style="border-radius: 50px;">+</button> -->
         <button type="button" class="btn btn-light round-btn">
           <i class="material-icons">add</i>
         </button>
       </div>
     </div>
 
-    <!-- Img 7 -->
+  
     <div class="imagen">
       <img src="https://i.ibb.co/2ZfF6rh/8.jpg" alt="" />
       <div class="overlay">
@@ -401,19 +376,14 @@
           >
           50.000
         </h3>
-        <!-- <h4 style="display: inline-flex; align-items: center">
-              <i class="material-icons" style="margin-right: 5px">attach_money</i>
-              50.000
-            </h4> -->
-
-        <!-- <button type="button" class="btn btn-primary btn-sm" style="border-radius: 50px;">+</button> -->
+ 
         <button type="button" class="btn btn-light round-btn">
           <i class="material-icons">add</i>
         </button>
       </div>
     </div>
 
-    <!-- Img 8 -->
+   
     <div class="imagen">
       <img src="https://i.ibb.co/XD9RcVH/7.jpg" alt="" />
       <div class="overlay">
@@ -457,17 +427,12 @@
           >
           50.000
         </h3>
-        <!-- <h4 style="display: inline-flex; align-items: center">
-              <i class="material-icons" style="margin-right: 5px">attach_money</i>
-              50.000
-            </h4> -->
 
-        <!-- <button type="button" class="btn btn-primary btn-sm" style="border-radius: 50px;">+</button> -->
         <button type="button" class="btn btn-light round-btn">
           <i class="material-icons">add</i>
         </button>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

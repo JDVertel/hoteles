@@ -22,6 +22,7 @@
 
     <!-- Descripción de la habitación -->
     <main>
+      <h1>Detalle de habitacion</h1>
       <div class="galeria">
         <div class="Hoteles"><h5>Descripción</h5></div>
         <p style="padding: 10px">
