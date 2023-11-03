@@ -90,7 +90,7 @@
 
 <!-- Inicio de scroll de hoteles y sitios -->
 
-    <d|iv class="galeria">
+    <div class="galeria">
         <div class="Hoteles">
             <h5>Hoteles</h5>
         </div>
@@ -173,7 +173,7 @@
                 <p class="text-hotel">Pscinas</p>
             </div>
         </div>
-    </d|iv>
+    </div>
 
 
 </template>
