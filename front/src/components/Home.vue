@@ -103,32 +103,13 @@
         </button>
 
         <div class="lista-imagenes hotel-images">
-            <div class="imagen-con-texto">
+            <div class="imagen-con-texto" v-for="hotel in datahotel" bind:key="hotel.nombre.">
                 <router-link class="link" to="/BellaVista">
-                    <img src="https://i.ibb.co/h29BtTK/2.jpg" alt="imagen-principal" />
-                    <p class="text-hotel">Bella Vista</p>
+                    <img :src="`${hotel.img1}`"  alt="imagen-principal" />
+                    <p class="text-hotel">{{hotel.nombre}}</p>
                 </router-link>
             </div>
-
-            <div class="imagen-con-texto">
-                <img src="https://i.ibb.co/xsbFYX0/3.jpg" alt="imagen-principal" />
-                <p class="text-hotel">Tamacara</p>
-            </div>
-
-            <div class="imagen-con-texto">
-                <img src="https://i.ibb.co/559wv1J/1.jpg" alt="imagen-principal" />
-                <p class="text-hotel">Vida Sana</p>
-            </div>
-
-            <div class="imagen-con-texto">
-                <img src="https://i.ibb.co/2Fd2rW3/5.jpg" alt="imagen-principal" />
-                <p class="text-hotel">Luis Alfonso</p>
-            </div>
-
-            <div class="imagen-con-texto">
-                <img src="https://i.ibb.co/WgCkWjh/6.jpg" alt="imagen-principal" />
-                <p class="text-hotel">El Dorado</p>
-            </div>
+ 
         </div>
 
         <br />
@@ -146,14 +127,16 @@
         </button>
 
         <div class="lista-imagenes sitios-images">
-            <div class="imagen-con-texto">
+            <div class="imagen-con-texto" v-for="sitio in datasitios" bind:key="sitio.nombre">
                 <router-link class="link" to="/SaltoDelMico">
-                    <img src="https://i.ibb.co/R77C9hC/1.jpg" alt="imagen-principal" />
-                    <p class="text-hotel">Salto del mico</p>
+                    <img :src="`${sitio.img1}`" alt="imagen-principal" />
+                    <p>{{sitio.descripcion}}</p>
+                    <p class="text-hotel">{{sitio.nombre}}</p>
+                  
                 </router-link>
             </div>
 
-            <div class="imagen-con-texto">
+           <!--  <div class="imagen-con-texto">
                 <img src="https://i.ibb.co/GxS2JWX/2.jpg" alt="imagen-principal" />
                 <p class="text-hotel">Catedral</p>
             </div>
@@ -171,7 +154,7 @@
             <div class="imagen-con-texto">
                 <img src="https://i.ibb.co/nBwMT4W/5.jpg" alt="imagen-principal" />
                 <p class="text-hotel">Pscinas</p>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -179,7 +162,14 @@
 </template>
 
 <script>
+
+console.log(hoteles)
+import {hoteles, Sturisticos} from './../components/BD/bd'
 export default {
+    data: () => ({
+        datahotel:hoteles,
+        datasitios:Sturisticos,
+    }),
     methods: {
         scrollImages(offset, galleryType) {
             const imageList = document.querySelector(`.${galleryType}-images`);
