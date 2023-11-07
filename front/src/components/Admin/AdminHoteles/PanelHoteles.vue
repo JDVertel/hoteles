@@ -1,6 +1,6 @@
 <template>
   <div class="galeria">
-    <div class="Hoteles"><h5>Admistrar hoteles</h5></div>
+    <div class="Hoteles"><h5>Administrar hoteles</h5></div>
     <div>
       <!-- Botón para agregar nuevo hotel -->
       <div>
@@ -26,6 +26,7 @@
               <th>Rlegal</th>
               <th>Telefono</th>
               <th>Correo</th>
+              <th>Vigencia</th>
               <th>Acciones</th>
             </tr>
           </thead>
@@ -36,6 +37,7 @@
               <td>{{ photel.rlagal }}</td>
               <td>{{ photel.tel }}</td>
               <td>{{ photel.correo }}</td>
+              <td>15 dias</td>
               <td>
                 <div class="btn-container">
                   <!-- boton que abre el modal -->
@@ -57,8 +59,8 @@
 
                   <!-- boton que debe lleva a las habitaciones del hotel -->
                   <router-link class="link" to="/PanelHabitaciones">
-                    <button title="Ver habitaciones" type="button" class="btns btn btn-dark">
-                      <i class="material-icons">holiday_village</i>
+                    <button title="Adicionar tiempo de vigencia" type="button" class="btns btn btn-dark">
+                      <i class="material-icons">timelapse</i>
                     </button>
                   </router-link>
                   <!-- boton que debe lleva a las habitaciones del hotel -->

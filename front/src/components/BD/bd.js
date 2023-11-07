@@ -37,7 +37,7 @@ export const hoteles = [
     },
     {
         id: 4,
-        nombre: "Luis Alfonso flores",
+        nombre: "Luis Alfonso",
         direccion: "",
         replegal: "",
         telefono: "",
@@ -51,7 +51,7 @@ export const hoteles = [
 /* ------------------------------------------------------------------ */
 export const Sturisticos = [
     {
-        nombre: "salto del mico seguro",
+        nombre: "salto del mico",
         descripcion: "lkasjdlkasdlkasjdlkajsdlkjasdlksa",
         img1: "https://i.ibb.co/R77C9hC/1.jpg",
     },
@@ -150,4 +150,32 @@ export const detallehab = [
         img4: "",
 
     }
-]
+];
+
+export const proveedores = [
+    {
+        alias: "HCulona Barichara",
+        tel: "3222431440",
+        sitios :[{nombre:"Salto del mico"}, {nombre:"piscinas"},{nombre:"cementerio"}],
+        vigencia: "10/05/2024",
+    },
+    {
+        alias: "SUXpress Barichara  ",
+        tel: "3222431440",
+        sitios :[{nombre:"Salto del mico"},{nombre:"cementerio"}],
+        vigencia: "10/05/2024",
+    },
+    {
+        alias: "Recorridos BCarlos",
+        tel: "3222431440",
+        sitios :[{nombre:"Salto del mico"}, {nombre:"piscinas"}],
+        vigencia: "10/05/2024",
+    },
+];
+
+export const sitios = [
+    {
+        nombre: "Salto del mico",
+        proveedor: "SUXpress Barichara",
+    },
+];

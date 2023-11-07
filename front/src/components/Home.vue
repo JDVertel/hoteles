@@ -90,67 +90,86 @@
 
 <!-- Inicio de scroll de hoteles y sitios -->
 
-    <div class="galeria">
-        <div class="Hoteles">
-            <h5>Hoteles</h5>
-        </div>
-        <button type="button" class="btn btn-custom btn-sm scroll-button" @click="scrollImages(-100, 'hotel')">
-            <i style="color: black" class="bi bi-arrow-left-circle-fill"></i>
-        </button>
+<div class="galeria">
+    <div class="Busquedas">
 
-        <button type="button" class="btn btn-custom btn-sm scroll-button" @click="scrollImages(100, 'hotel')">
-            <i style="color: black" class="bi bi-arrow-right-circle-fill"></i>
-        </button>
-<!-----------------------------------------------PASARELA HOTELES-----------------------------------  -->
-        <div class="lista-imagenes hotel-images">
-            <div class="imagen-con-texto" v-for="hotel in datahotel" bind:key="hotel.nombre.">
-                <router-link class="link" to="/GaleriaHabitaciones">
-                    <img :src="`${hotel.img1}`"  alt="imagen-principal" />
-                    <p class="text-hotel">{{hotel.nombre}}</p>
-                </router-link>
-            </div>
- 
-        </div>
-<!--  -->
-        <br />
-
-        <div class="Sitios">
-            <h5>Sitios Turísticos</h5>
-        </div>
-
-        <button type="button" class="btn btn-custom btn-sm scroll-button" @click="scrollImages(-100, 'sitios')">
-            <i style="color: black" class="bi bi-arrow-left-circle-fill"></i>
-        </button>
-
-        <button type="button" class="btn btn-custom btn-sm scroll-button" @click="scrollImages(100, 'sitios')">
-            <i style="color: black" class="bi bi-arrow-right-circle-fill"></i>
-        </button>
-<!-----------------------------------------------PASARELA SITIOS TURISTICOS-----------------------------------  -->
-        <div class="lista-imagenes sitios-images">
-            <div class="imagen-con-texto" v-for="sitio in datasitios" bind:key="sitio.nombre">
-                <router-link class="link" to="/SaltoDelMico">
-                    <img :src="`${sitio.img1}`" alt="imagen-principal" />
-                    <p>{{sitio.descripcion}}</p>
-                    <p class="text-hotel">{{sitio.nombre}}</p>
-                  
-                </router-link>
+        <div class="row" style="text-align: center; margin-bottom: 25px">
+            <h5>Busqueda de alojamientos en general</h5>
+            <div class="col-6 col-md-4" style="margin-bottom: 20px; display: inline-block">
+                <div class="input-group">
+                    <span style="background-color: #b7642d; color: #fff" class="input-group-text" id="addon-wrapping">Ingreso</span>
+                    <input type="date" class="form-control" />
+                </div>
             </div>
 
-        
+            <div class="col-6 col-md-4" style="display: inline-block">
+                <div class="input-group">
+                    <span style="background-color: #b7642d; color: #fff" class="input-group-text" id="addon-wrapping">Salida</span>
+                    <input type="date" class="form-control" />
+                </div>
+            </div>
+            <div class="col-12 col-md-2"><button class="btncafe"><i class="bi bi-search"></i> Buscar Habitaciones Disponibles </button></div>
         </div>
+
+    </div>
+    <div class="Hoteles">
+        <h5>Hoteles</h5>
+    </div>
+    <button type="button" class="btn btn-custom btn-sm scroll-button" @click="scrollImages(-100, 'hotel')">
+        <i style="color: black" class="bi bi-arrow-left-circle-fill"></i>
+    </button>
+
+    <button type="button" class="btn btn-custom btn-sm scroll-button" @click="scrollImages(100, 'hotel')">
+        <i style="color: black" class="bi bi-arrow-right-circle-fill"></i>
+    </button>
+    <!-----------------------------------------------PASARELA HOTELES-----------------------------------  -->
+    <div class="lista-imagenes hotel-images">
+        <div class="imagen-con-texto" v-for="hotel in datahotel" bind:key="hotel.nombre.">
+            <router-link class="link" to="/GaleriaHabitaciones">
+                <img :src="`${hotel.img1}`" alt="imagen-principal" />
+                <p class="text-hotel">{{hotel.nombre}}</p>
+            </router-link>
+        </div>
+
+    </div>
+    <!--  -->
+    <br />
+
+    <div class="Sitios">
+        <h5>Sitios Turísticos</h5>
     </div>
 
+    <button type="button" class="btn btn-custom btn-sm scroll-button" @click="scrollImages(-100, 'sitios')">
+        <i style="color: black" class="bi bi-arrow-left-circle-fill"></i>
+    </button>
 
+    <button type="button" class="btn btn-custom btn-sm scroll-button" @click="scrollImages(100, 'sitios')">
+        <i style="color: black" class="bi bi-arrow-right-circle-fill"></i>
+    </button>
+    <!-----------------------------------------------PASARELA SITIOS TURISTICOS-----------------------------------  -->
+    <div class="lista-imagenes sitios-images">
+        <div class="imagen-con-texto" v-for="sitio in datasitios" bind:key="sitio.nombre">
+            <router-link class="link" to="/SaltoDelMico">
+                <img :src="`${sitio.img1}`" alt="imagen-principal" />
+               
+                <p class="text-hotel">{{sitio.nombre}}</p>
+
+            </router-link>
+        </div>
+
+    </div>
+</div>
 </template>
 
 <script>
-
-
-import {hoteles, Sturisticos} from './../components/BD/bd'
+import {
+    hoteles,
+    Sturisticos
+} from './../components/BD/bd'
 export default {
     data: () => ({
-        datahotel:hoteles,
-        datasitios:Sturisticos,
+        datahotel: hoteles,
+        datasitios: Sturisticos,
     }),
     methods: {
         scrollImages(offset, galleryType) {
@@ -162,6 +181,17 @@ export default {
 </script>
 
 <style scoped>
+.btncafe {
+    margin-right: 10px;
+    border-radius: 50px;
+    background-color: #b7642d;
+    border-style: none;
+    color: #fff;
+    padding: 8px;
+    margin-left: 5px;
+
+}
+
 .imagen-con-texto {
     transition: 0.5s;
 }

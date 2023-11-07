@@ -19,7 +19,7 @@
             <tr v-for="photel in hoteles">
               <td>{{ photel.direccion }}</td>
               <td>{{ photel.nombre }}</td>
-              <td>{{ photel.rlagal }}</td>
+              <td>{{ photel.rlegal }}</td>
               <td>{{ photel.tel }}</td>
               <td>{{ photel.correo }}</td>
               <td>
@@ -36,9 +36,7 @@
                   <!-- boton que abre el modal -->
 
                   <!-- boton que debe elimina el hotel -->
-                  <button type="button" class="btns btn btn-dark">
-                    <i class="material-icons">delete</i>
-                  </button>
+                 
                   <!-- boton que debe elimina el hotel -->
                 </div>
               </td>
@@ -59,7 +57,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h1 class="modal-title fs-5" id="exampleModalLabel">
-                Editar hotel
+                Editar datos del hotel
               </h1>
               <button
                 type="button"
@@ -69,9 +67,9 @@
               ></button>
             </div>
             <div class="modal-body">
-              <div class="col-15">
+         <!--      <div class="col-15">
                 <div class="mb-3">
-                  <strong>Imágen pricipal *</strong>
+                  <strong>Imágen principal *</strong>
                   <p>{{ imagesSelected }} imágenes seleccionadas (Máximo 1)</p>
                   <div style="margin-top: -15px" class="logo">
                     <p class="logop">
@@ -93,50 +91,14 @@
                     />
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <div class="row">
-                <div class="col-15">
-                  <div class="mb-3">
-                    <label class="form-label" for="direccion_hotel"
-                      ><strong>Dirección *</strong></label
-                    ><input
-                      class="form-control"
-                      type="text"
-                      id="direccion_hotel"
-                      name="direccion_hotel"
-                      required=""
-                    />
-                  </div>
-                </div>
+             
 
-                <div class="col-15">
-                  <div class="mb-3">
-                    <label class="form-label" for="nombre_hotel"
-                      ><strong>Nombre *</strong></label
-                    ><input
-                      class="form-control"
-                      type="text"
-                      id="nombre_hotel"
-                      name="nombre_hotel"
-                      required=""
-                    />
-                  </div>
-                </div>
+            
 
-                <div class="col-15">
-                  <div class="mb-3">
-                    <label class="form-label" for="r_legal"
-                      ><strong>Representante legal *</strong></label
-                    ><input
-                      class="form-control"
-                      type="text"
-                      id="r_legal"
-                      name="r_legal"
-                      required=""
-                    />
-                  </div>
-                </div>
+              
 
                 <div class="col-15">
                   <div class="mb-3">
@@ -200,7 +162,7 @@ export default {
         {
           direccion: "Carrera 2A #6-12",
           nombre: "Bella Vista",
-          rlagal: "Juan Romero",
+          rlegal: "Juan Romero",
           tel: "3222431440",
           correo: "juanr@gmail.com",
         },
